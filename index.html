@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="auto" data-accent="blue">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="謝昌宏的成長進行式：從醫學學習、科學研究，到團隊合作與人文關懷，探索我的特質與大一生活。">
+  <meta name="theme-color" content="#080d17">
+  <title>謝昌宏｜成長進行式</title>
+  <!-- 系統字體與內嵌素材：單檔版無須網路，也不依賴框架。 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 跳至內容連結：鍵盤使用者可略過每次重複的導覽列。 -->
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <!-- 導覽：桌面顯示章節，手機改為具有狀態回饋的漢堡選單。 -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="謝昌宏，回到首頁"><span class="brand-symbol" aria-hidden="true">CH<span>·</span></span><span>謝昌宏<small>成長進行式</small></span></a>
+      <nav id="primaryNav" aria-label="主要導覽">
+        <a href="#traits">關於我</a><a href="#freshman">大一紀事</a><a href="#research">研究探索</a><a href="#journey">成長軌跡</a><a href="#next">下一步</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="appearanceButton" aria-label="調整網站外觀" title="調整網站外觀"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
+        <button class="menu-toggle icon-button" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="開啟導覽選單"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 首屏：一句主張、一張本人照片、兩個明確入口，建立人物辨識。 -->
+    <section class="hero panel" id="home" aria-labelledby="heroTitle">
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> MEDICINE · SCIENCE · HUMANITY</p>
+          <h1 id="heroTitle">謝昌宏<span class="name-en">CHANG-HUNG HSIEH</span></h1>
+          <p class="hero-statement">以好奇探索世界，<br><span>以溫柔回應生命。</span></p>
+          <p class="hero-description">我是一名醫學生。從機器人賽場到實驗室，<br class="desktop-only">讓自律、合作與持續提問，成為向前的力量。</p>
+          <div class="button-row"><a class="button primary" href="#freshman">走進我的大一 <span aria-hidden="true">↗</span></a><a class="text-link" href="#research">閱讀研究故事 <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-footnote"><span>中國醫藥大學 · 醫學系</span><span>持續學習，持續成為。</span></div>
+        </div>
+        <div class="portrait-composition">
+          
+          <span class="portrait-index" aria-hidden="true">01 / A WORK IN PROGRESS</span>
+          <figure class="portrait-frame"><img src="assets/portrait.webp" alt="謝昌宏的個人大頭照，穿著淺色襯衫" width="669" height="925" fetchpriority="high"><figcaption><span>保持好奇</span><span>STAY CURIOUS ↗</span></figcaption></figure>
+          <span class="portrait-note">不急著定義自己。<br>讓每一次嘗試，長出新的可能。</span>
+          
+        </div>
+      </div>
+      <div class="hero-bottom wrap"><a href="#traits">向下探索 <span aria-hidden="true">↓</span></a><span>01 — 06 / THE STORY SO FAR</span></div>
+    </section>
+
+    <!-- 特質互動：用可驗證的經歷解釋特質，不以虛構分數或雷達圖替人評分。 -->
+    <section class="traits section-space panel" id="traits" aria-labelledby="traitsTitle">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">01 / WHAT MAKES ME, ME</p><h2 id="traitsTitle">特質不是形容詞。<br><span class="muted">是一次次選擇。</span></h2><p class="section-intro">點選一個關鍵字，看看它如何在我的經歷中發生。</p></div>
+        <div class="traits-layout reveal">
+          <div class="trait-tabs" role="tablist" aria-label="探索我的四項特質" aria-orientation="vertical">
+            <button id="traitTab0" role="tab" aria-controls="traitPanel0" aria-selected="true" tabindex="0"><span class="tab-number">01</span><span>自律前進<small>DISCIPLINE</small></span><span aria-hidden="true">↗</span></button>
+            <button id="traitTab1" role="tab" aria-controls="traitPanel1" aria-selected="false" tabindex="-1"><span class="tab-number">02</span><span>主動探索<small>CURIOSITY</small></span><span aria-hidden="true">↗</span></button>
+            <button id="traitTab2" role="tab" aria-controls="traitPanel2" aria-selected="false" tabindex="-1"><span class="tab-number">03</span><span>一起完成<small>COLLABORATION</small></span><span aria-hidden="true">↗</span></button>
+            <button id="traitTab3" role="tab" aria-controls="traitPanel3" aria-selected="false" tabindex="-1"><span class="tab-number">04</span><span>溫柔而堅定<small>EMPATHY</small></span><span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="trait-panel-wrap">
+            <div class="trait-art" aria-hidden="true"><svg viewBox="0 0 400 400"><ellipse cx="200" cy="200" rx="145" ry="75" transform="rotate(-35 200 200)"/><ellipse cx="200" cy="200" rx="145" ry="75" transform="rotate(35 200 200)"/><ellipse cx="200" cy="200" rx="145" ry="75" transform="rotate(90 200 200)"/><circle cx="200" cy="200" r="13"/><circle cx="112" cy="112" r="6"/></svg></div>
+            <article class="trait-panel" id="traitPanel0" role="tabpanel" aria-labelledby="traitTab0" tabindex="0"><span class="mini-label">把挫折，變成調整的起點。</span><h3>讓熱情有方向，<br>也讓每一天有安排。</h3><p>高中投入機器人競賽時，我曾因忙碌而影響課業。這段經驗讓我重新安排時間、重視作業與準備節奏。進入大學後，我持續在學業與多元活動之間練習平衡。</p><a class="text-link" href="#freshman" data-freshman-tab="0">看見大一的進步 <span aria-hidden="true">↗</span></a></article>
+            <article class="trait-panel" id="traitPanel1" role="tabpanel" aria-labelledby="traitTab1" tabindex="0" hidden><span class="mini-label">從「知道」，走向「為什麼」。</span><h3>把一個問題，<br>追問成新的可能。</h3><p>高中時，我用動畫解釋基因編輯，也用遊戲帶同學理解循環系統。大一走進實驗室後，開始接觸神經與腫瘤溝通的研究，把生物興趣延伸到可被檢驗的研究問題。</p><a class="text-link" href="#research">走進研究探索 <span aria-hidden="true">↗</span></a></article>
+            <article class="trait-panel" id="traitPanel2" role="tabpanel" aria-labelledby="traitTab2" tabindex="0" hidden><span class="mini-label">一個人的投入，一群人的成果。</span><h3>願意聽，也願意<br>把責任接過來。</h3><p>在機器人校隊，我負責電子配線、配電與零件安排，也參與媒體工作。遇到問題時，和隊友交換想法、與其他隊伍溝通；來到系隊後，繼續在共同目標中學習合作。</p><a class="text-link" href="#journey">回看團隊中的成長 <span aria-hidden="true">↗</span></a></article>
+            <article class="trait-panel" id="traitPanel3" role="tabpanel" aria-labelledby="traitTab3" tabindex="0" hidden><span class="mini-label">把理解，放在解答之前。</span><h3>所學的價值，<br>也在於能幫助誰。</h3><p>參與科技工程營隊時，我們以指尖陀螺等實作引導孩子理解原理。我練習放慢步調、耐心解釋，也更確定自己希望把知識轉化為對他人的支持。</p><a class="text-link" href="#care">閱讀我的初衷 <span aria-hidden="true">↗</span></a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 大一專區：五個分頁保留完整內容；每個分頁包含經歷、能力與來源。 -->
+    <section class="freshman section-space panel" id="freshman" aria-labelledby="freshmanTitle">
+      <div class="wrap">
+        <div class="split-heading reveal"><div><p class="eyebrow">02 / MY FIRST YEAR</p><h2 id="freshmanTitle">我的大一，<br>不只一種樣子。</h2></div><p class="section-intro">在課堂裡累積，在球場上投入，<br>在研究與交流之間，拓展自己的邊界。</p></div>
+        <div class="year-stats reveal" aria-label="大一學業與成果摘要"><div><span class="stat-number"><span data-count="12">12</span><small>名</small></span><span>學年系排名</span></div><div><span class="stat-number">冠軍</span><span>院際盃桌球錦標賽</span></div><div><span class="stat-number">特優</span><span>海報論文成果</span></div><div><span class="stat-number">泰國</span><span>交換學習經驗</span></div></div>
+        <div class="year-tabs" role="tablist" aria-label="大一的五個面向">
+          <button id="yearTab0" role="tab" aria-controls="yearPanel0" aria-selected="true" tabindex="0"><span>01</span> 學業精進</button><button id="yearTab1" role="tab" aria-controls="yearPanel1" aria-selected="false" tabindex="-1"><span>02</span> 球場日常</button><button id="yearTab2" role="tab" aria-controls="yearPanel2" aria-selected="false" tabindex="-1"><span>03</span> 研究起步</button><button id="yearTab3" role="tab" aria-controls="yearPanel3" aria-selected="false" tabindex="-1"><span>04</span> 成果表達</button><button id="yearTab4" role="tab" aria-controls="yearPanel4" aria-selected="false" tabindex="-1"><span>05</span> 國際交流</button>
+        </div>
+        <div class="year-panels">
+          <article class="year-panel" id="yearPanel0" role="tabpanel" aria-labelledby="yearTab0" tabindex="0">
+            <div class="year-copy"><p class="mini-label">LEARNING / 一點一點，向前。</p><h3>把持續精進，<br>變成日常。</h3><p>大一，我持續投入醫學系課業。上學期系排名第 23 名，下學期進步到第 11 名，總學年排名第 12 名。這些數字記錄的是一段仍在前進的學習歷程。</p><p>從高中忙於競賽的經驗中，我理解時間安排的重要；進入大學後，學業依然是參與運動、研究與交流時的重要基礎。</p><div class="learning-tags"><span>持續學習</span><span>時間管理</span><span>自我要求</span></div></div>
+            <div class="academic-visual"><div class="graphic-heading"><span>YEAR ONE / ACADEMIC RECORD</span><span class="status-dot"></span></div><div class="rank-comparison"><div><span>上學期</span><strong>23</strong><span>系排名</span></div><span class="rank-arrow" aria-label="進步至">↗</span><div><span>下學期</span><strong>11</strong><span>系排名</span></div></div><div class="rank-line" aria-hidden="true"><span></span><i></i><span></span></div><div class="annual-rank"><span>總學年排名</span><strong>12<small> 名</small></strong></div><small>名次數字越小，排名越前。</small></div>
+          </article>
+          <article class="year-panel" id="yearPanel1" role="tabpanel" aria-labelledby="yearTab1" tabindex="0" hidden><div class="year-copy"><p class="mini-label">SPORT / 專注，也發生在球場。</p><h3>在每一次來回裡，<br>練習全力以赴。</h3><p>大一參與系桌與系籃，把運動放進生活。在院際盃桌球錦標賽獲得冠軍，是這段校園經歷中值得記下的一刻。</p><p>規律運動一直是我重視的習慣。課業之外，球場提供另一種投入的方式，也讓我持續與隊友建立默契。</p><div class="learning-tags"><span>系桌 · 系籃</span><span>團隊精神</span><span>規律運動</span></div></div><figure class="year-photo sport-photo"><img src="assets/sports.webp" alt="謝昌宏手持桌球冠軍獎盃與獎牌的照片" loading="lazy" width="900" height="1201"><figcaption><span>院際盃桌球錦標賽</span><strong>CHAMPION / 冠軍</strong></figcaption></figure></article>
+          <article class="year-panel" id="yearPanel2" role="tabpanel" aria-labelledby="yearTab2" tabindex="0" hidden><div class="year-copy"><p class="mini-label">RESEARCH / 讓問題有被探索的機會。</p><h3>第一次走進實驗室，<br>把好奇變成行動。</h3><p>大一進入實驗室，學習實驗操作技術，並參與以口腔鱗狀細胞癌與神經–腫瘤溝通為主題的研究。研究從觀察出發，思考能否以胜肽干擾相關蛋白質交互作用。</p><p>海報整理了界面預測、胜肽設計與未來驗證的方向。對我而言，這是把課堂中的生物知識，帶進實際研究情境的起步。</p><div class="learning-tags"><span>實驗操作</span><span>研究提問</span><span>跨域學習</span></div><button class="text-link" data-read="poster">開啟完整研究海報 <span aria-hidden="true">↗</span></button></div><div class="poster-teaser"><span class="mini-label">MY FIRST RESEARCH CHAPTER</span><button class="poster-image-button" data-read="poster" aria-label="開啟並放大研究海報"><img src="assets/poster-1.webp" alt="神經–腫瘤溝通胜肽阻斷研究的完整海報縮圖" loading="lazy" width="2200" height="3111"><span>展開海報 ↗</span></button></div></article>
+          <article class="year-panel" id="yearPanel3" role="tabpanel" aria-labelledby="yearTab3" tabindex="0" hidden><div class="year-copy"><p class="mini-label">COMMUNICATION / 把研究說清楚。</p><h3>讓投入被看見，<br>也讓想法被理解。</h3><p>大一成果包含海報論文特優，以及金頭腦科研計畫簡報競賽佳作。從研究內容到對外呈現，我持續練習把問題、方法與研究方向整理成清楚的敘事。</p><p>成果展示也是檢視自己的機會：知道哪些內容已經完成，哪些問題仍然需要下一步驗證，讓表達建立在理解之上。</p><div class="award-row"><span>海報論文 <b>特優</b></span><span>科研簡報競賽 <b>佳作</b></span></div></div><figure class="year-photo landscape-photo"><img src="assets/competition.webp" alt="金頭腦科研計畫簡報競賽參與者的合影" loading="lazy" width="1100" height="557"><figcaption><span>把科學問題，轉化為可以交流的想法。</span><strong>RESEARCH & PRESENTATION</strong></figcaption></figure></article>
+          <article class="year-panel" id="yearPanel4" role="tabpanel" aria-labelledby="yearTab4" tabindex="0" hidden><div class="year-copy"><p class="mini-label">EXCHANGE / 把視野帶到更遠的地方。</p><h3>走出熟悉的環境，<br>讓交流成為學習。</h3><p>大一赴泰國交換，培養國際視野與英文能力。從高中參與國際機器人競賽，到大學的交換經驗，我持續嘗試在不同文化與學習情境中與人溝通。</p><p>語言能力讓交流有了起點，主動理解則讓經驗更加立體。走進不同的環境，也提醒我保留開放與好奇。</p><div class="learning-tags"><span>泰國交換</span><span>英文溝通</span><span>跨文化理解</span></div></div><figure class="year-photo landscape-photo"><img src="assets/thailand.webp" alt="泰國交換期間，交流學生在戶外持旗合影" loading="lazy" width="1100" height="733"><figcaption><span>THAILAND / 交換學習</span><strong>讓世界，成為另一間教室。</strong></figcaption></figure></article>
+        </div>
+        <div class="section-footer"><span>五個面向，同一個持續成長的自己。</span></div>
+      </div>
+    </section>
+
+    <!-- Sticky 研究敘事：桌面將視覺固定，文字依捲動切換；手機還原直向閱讀。 -->
+    <section class="research section-space panel" id="research" aria-labelledby="researchTitle">
+      <div class="wrap"><div class="split-heading reveal"><div><p class="eyebrow">03 / FROM CURIOSITY TO DISCOVERY</p><h2 id="researchTitle">從一個提問，<br>走進研究。</h2></div><p class="section-intro">能否干擾神經與腫瘤的溝通，<br>為口腔癌研究開啟另一種思考？</p></div>
+        <div class="research-story" id="researchStory">
+          <div class="research-stage"><div class="science-visual"><span class="mini-label">NERVE × TUMOR / RESEARCH CONCEPT</span><svg class="science-svg" viewBox="0 0 500 430" role="img" aria-labelledby="scienceTitle scienceDesc"><title id="scienceTitle">神經、腫瘤與介面阻斷的概念示意</title><desc id="scienceDesc">左側為抽象神經分枝，右側為腫瘤細胞輪廓，中央表示嘗試干擾的溝通介面。不是實際分子結構或實驗數據。</desc><defs><radialGradient id="cellGradient"><stop stop-color="#8cb9ff" stop-opacity=".4"/><stop offset="1" stop-color="#5689dc" stop-opacity=".05"/></radialGradient></defs><g class="nerve-lines"><path d="M30 90L90 135L125 215L195 215M15 225L125 215M38 345L95 290L125 215M90 135L95 55M90 135L40 160M95 290L140 345"/><circle cx="125" cy="215" r="27"/><circle cx="125" cy="215" r="10"/></g><g class="signal-lines"><path d="M200 215H310" stroke-dasharray="4 9"/><circle cx="228" cy="215" r="5"/><circle cx="282" cy="215" r="5"/></g><g class="cell"><path d="M358 106C410 76 455 135 448 174C490 222 459 288 412 293C372 338 317 292 320 252C283 220 300 162 330 153C328 133 339 117 358 106Z" fill="url(#cellGradient)"/><circle cx="382" cy="211" r="41"/><circle cx="382" cy="211" r="17"/><circle cx="350" cy="167" r="5"/><circle cx="417" cy="248" r="7"/><circle cx="339" cy="249" r="4"/></g><g class="blocker"><rect x="242" y="172" width="26" height="86" rx="13" transform="rotate(22 255 215)"/><path d="M247 195l16 5m-20 7l16 5m-20 7l16 5"/></g><text x="94" y="385">神經</text><text x="350" y="385">腫瘤細胞</text></svg><div class="science-caption"><span id="scienceStep">01 / 觀察與提問</span><small>概念示意，非實際蛋白質結構</small></div></div><a class="button outline-light" href="#posterShowcase">查看研究海報 <span aria-hidden="true">↗</span></a></div>
+          <div class="research-steps">
+            <article class="research-step" data-step="0"><span class="step-index">01 / OBSERVE</span><h3>先有觀察，<br>再提出問題。</h3><p>海報先從癌細胞擴散與神經–腫瘤溝通的觀察出發，再由神經發育及突觸訊號相關基因的分析，聚焦 SAMX 的可能角色，並辨識候選交互作用蛋白 A2 與 C1。</p><span class="research-label">研究背景與假說</span></article>
+            <article class="research-step" data-step="1"><span class="step-index">02 / MODEL</span><h3>精簡結構，<br>尋找共同介面。</h3><p>先移除 SAMX 的低信心、不穩定區域，建立較穩定的核心結構 SAMXp。接著模擬其與已知及候選配體的交互作用，辨識出含有 α-helix 的共同結合區域。</p><span class="research-label">計算預測 · SAMXp → 共同結合區域</span></article>
+            <article class="research-step" data-step="2"><span class="step-index">03 / DESIGN</span><h3>從結合介面，<br>設計候選胜肽。</h3><p>以預測介面為設計目標，依結構信心、親水性與穩定性進行篩選，得到兩個候選胜肽。這是後續測試的起點，尚不能直接等同於已證實的結合或阻斷效果。</p><span class="research-label">初步結果 · 兩個候選胜肽</span></article>
+            <article class="research-step" data-step="3"><span class="step-index">04 / VALIDATE</span><h3>讓預測，<br>接受實驗的檢驗。</h3><p>下一步規劃在 SCG 衍生周邊神經與口腔鱗狀細胞癌共培養模型中檢驗候選胜肽，並延伸至後續動物研究。實際結合能力、功能性阻斷效果及復發影響，仍需實驗驗證。</p><span class="research-label">後續規劃 · 非已完成的療效結果</span></article>
+          </div>
+        </div>
+        <!-- 海報入口：獨立對話框內可換頁、縮放、開啟 PDF 及下載原檔。 -->
+        <div class="poster-showcase reveal" id="posterShowcase"><button class="poster-cover" data-read="poster" aria-label="開啟海報論文閱讀視窗"><img src="assets/poster-1.webp" alt="謝昌宏參與的神經–腫瘤溝通胜肽阻斷研究海報" loading="lazy" width="2200" height="3111"><span aria-hidden="true">↗</span></button><div><p class="eyebrow">FEATURED WORK / RESEARCH POSTER</p><h3>嘗試阻斷神經–腫瘤溝通的<br>胜肽設計研究</h3><p class="poster-english" lang="en">Development of Peptide Blockers for Preventing OSCC Recurrence through Disrupting Nerve-Tumor Communication</p><p>從背景、目標、方法到初步結果，<br>閱讀這段研究探索的完整脈絡。</p><div class="button-row"><button class="button light-button" data-read="poster">開啟海報論文 <span aria-hidden="true">↗</span></button><button class="text-link on-dark" data-download="poster">下載 PDF <span aria-hidden="true">↓</span></button></div><small class="research-disclaimer">共同研究成果；作者及研究團隊資訊詳見原始海報。網站依海報整理，非醫療建議。</small></div></div>
+      </div>
+    </section>
+
+    <!-- 成長軌跡：原生 details 可用鍵盤操作，未載入 JavaScript 也能展開。 -->
+    <section class="journey section-space panel" id="journey" aria-labelledby="journeyTitle"><div class="wrap journey-layout"><div class="journey-heading reveal"><p class="eyebrow">04 / CONNECTING THE DOTS</p><h2 id="journeyTitle">每一步，<br>都沒有白走。</h2><p class="section-intro">從工程思考到醫學探索，<br>那些看似不同的經歷，<br>慢慢連成自己的方向。</p></div><div class="timeline">
+      <details class="timeline-item" open><summary><span class="timeline-time">高中 / 建國中學</span><span class="timeline-title">在機器人校隊，學會共同解題。</span><span class="details-sign" aria-hidden="true">+</span></summary><div class="timeline-body"><p>參與電子組的配線、配電與零件配置，並擔任商務經理中主管媒體的職務。從工程設計、物件辨識的改善，到影片整理與剪輯，逐步累積跨領域能力。</p><p>參與 2023、2024 年國際機器人賽事；團隊曾獲工程優異獎與分區賽亞軍。這些經驗讓我練習在時間限制中思考、溝通與承擔。</p><span class="timeline-keyword">工程思考 / 團隊合作 / 責任感</span></div></details>
+      <details class="timeline-item"><summary><span class="timeline-time">高中 / 探究與服務</span><span class="timeline-title">把自己懂的，變成別人能懂的。</span><span class="details-sign" aria-hidden="true">+</span></summary><div class="timeline-body"><p>生物報告中，我以動畫呈現機制，以遊戲增加參與；科技營隊中，我和夥伴讓孩子透過實作探索原理。教學與表達，讓知識成為人與人之間的連結。</p><p>科技工程營隊服務學習累積 64 小時。這段經驗也培養了耐心、同理心與回饋社會的想法。</p><span class="timeline-keyword">64 小時服務 / 科學溝通 / 同理心</span></div></details>
+      <details class="timeline-item"><summary><span class="timeline-time">2025 / 語言能力</span><span class="timeline-title">讓語言，成為走向世界的工具。</span><span class="details-sign" aria-hidden="true">+</span></summary><div class="timeline-body"><p>英文檢定取得 970 分。從高中出國競賽時的交流，到後來赴泰國交換，我持續把英文放進真實的溝通場景。</p><p>語言能力也支持閱讀醫學相關文章與跨文化學習，讓好奇心有機會走得更遠。</p><span class="timeline-keyword">英語檢定 970 / 溝通 / 國際視野</span></div></details>
+      <details class="timeline-item"><summary><span class="timeline-time">大一 / 醫學系</span><span class="timeline-title">在學業、運動與研究之間成長。</span><span class="details-sign" aria-hidden="true">+</span></summary><div class="timeline-body"><p>持續精進課業、參與系桌與系籃、進入實驗室，並透過海報與簡報整理研究。泰國交換則讓學習走出熟悉的環境。</p><p>這些經歷並行發展，也讓「醫學 × 科技 × 關懷」逐漸成為更清晰的方向。</p><a class="text-link" href="#freshman">回到大一專區 <span aria-hidden="true">↗</span></a></div></details>
+    </div></div></section>
+
+    <!-- 初衷：本人提供的服務照片配合短文，讓人文關懷有具體脈絡。 -->
+    <section class="care panel" id="care" aria-labelledby="careTitle"><div class="wrap care-layout"><figure class="care-photo reveal"><img src="assets/service.webp" alt="科技工程營隊中，謝昌宏耐心協助孩子操作與學習" loading="lazy" width="665" height="688"><figcaption>科技工程營隊 / 從實作中，陪伴理解。</figcaption></figure><div class="care-copy reveal"><p class="eyebrow">05 / THE REASON BEHIND IT ALL</p><h2 id="careTitle">學會更多，<br>是為了靠近需要。</h2><p>我希望成為能理解人、也能解決問題的醫師。專業知識讓我有能力面對問題，同理心則提醒我：每個問題的背後，都有真實的人。</p><p>從耐心陪伴孩子學習，到持續投入醫學知識與研究，我想把所學轉化為對人的關懷。</p><div class="care-stat"><strong data-count="64">64</strong><div>小時服務學習<span>高中科技工程營隊紀錄</span></div></div></div></div></section>
+
+    <!-- 未來方向明確標為期許，避免把規劃誤寫成已完成的經歷。 -->
+    <section class="next section-space panel" id="next" aria-labelledby="nextTitle"><div class="wrap"><p class="eyebrow reveal">06 / THE NEXT CHAPTER</p><h2 class="reveal" id="nextTitle">成長，<span class="muted">仍在進行。</span></h2><p class="next-lead reveal">以醫學打底，以科技探索，以關懷定義方向。</p><div class="next-grid reveal"><article><span>01 / MEDICINE</span><h3>扎實的醫學專業</h3><p>持續累積基礎與臨床知識，逐步走向具備專業判斷與責任感的醫師。</p></article><article><span>02 / SCIENCE</span><h3>能提出問題的研究者</h3><p>深化生命科學研究能力，探索程式與人工智慧在醫學中的應用可能。</p></article><article><span>03 / HUMANITY</span><h3>願意靠近人的實踐者</h3><p>保留服務他人的初衷，培養同理心，期許未來能參與義診與社會服務。</p></article></div><small class="future-note">以上為未來方向與期許，並非已取得的資格或已完成的成果。</small><div class="closing-cta"><p>謝謝你，認識正在成長的我。</p><a class="button primary" href="#home">再看一次我的故事 <span aria-hidden="true">↑</span></a></div></div></section>
+  </main>
+
+  <!-- 頁尾保留課堂宣告與資料入口；不杜撰地址、聯絡方式或公司認證。 -->
+  <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#home"><span class="brand-symbol" aria-hidden="true">CH<span>·</span></span><span>謝昌宏<small>成長進行式</small></span></a><!-- 原創座右銘：用三個短句呼應好奇、自律與同理心，取代頁尾的文件入口。 -->
+<p class="footer-motto"><span>以好奇求知，</span><span>以自律前行，</span><span>以溫柔待人。</span></p><div class="footer-links"><button id="notesButton">製作筆記</button></div></div><div class="footer-bottom"><p>本網站為課堂練習作品，品牌為虛構。<br>「成長進行式」為原創網站主題；人物與經歷依本人提供資料整理。照片及原始文件由本人提供。</p><span>KEEP LEARNING.<br>KEEP BECOMING.</span></div></div></footer>
+
+  <!-- 文件閱讀器使用原生 dialog：支援焦點限制、Esc 關閉、按鈕換頁與原檔下載。 -->
+  <dialog id="readerDialog" class="reader-dialog" aria-labelledby="readerTitle"><div class="reader-header"><div><span class="mini-label">PERSONAL ARCHIVE</span><h2 id="readerTitle">文件閱讀</h2></div><button class="icon-button close-dialog" aria-label="關閉文件閱讀器">✕</button></div><div class="reader-toolbar"><div class="reader-pager"><button id="prevPage" class="small-button" aria-label="上一頁">←</button><span id="pageLabel" aria-live="polite">1 / 1</span><button id="nextPage" class="small-button" aria-label="下一頁">→</button></div><div class="reader-zoom"><label for="zoomRange">縮放</label><input id="zoomRange" type="range" min="60" max="220" value="100" step="10"><output id="zoomValue" for="zoomRange">100%</output><button id="resetZoom" class="small-button">符合寬度</button></div><div class="reader-file-actions"><a id="openOriginal" class="small-button" target="_blank" rel="noopener">開啟原始 PDF ↗</a><a id="downloadOriginal" class="small-button" download>下載 PDF ↓</a></div></div><p class="reader-tip">可用 ← → 換頁，Esc 關閉；放大後可在文件區捲動。清晰原文請開啟 PDF。</p><div class="reader-viewport" id="readerViewport" tabindex="0" aria-label="文件預覽，可捲動查看"><div class="reader-sheet" id="readerSheet"><img id="readerImage" alt="" draggable="false"></div></div><p class="reader-description" id="readerDescription"></p></dialog>
+
+  <!-- 外觀設定是可逆的本機偏好；localStorage 不可用時仍可在當前頁面使用。 -->
+  <dialog class="settings-dialog" id="appearanceDialog" aria-labelledby="appearanceTitle"><div class="dialog-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="appearanceTitle">選一種閱讀心情。</h2></div><button class="icon-button close-dialog" aria-label="關閉外觀設定">✕</button></div><fieldset><legend>明暗模式</legend><div class="segmented" id="themeOptions"><button data-theme-choice="auto" aria-pressed="true">跟隨系統</button><button data-theme-choice="light" aria-pressed="false">明亮</button><button data-theme-choice="dark" aria-pressed="false">深色</button></div></fieldset><fieldset><legend>強調色</legend><div class="accent-options"><button data-accent-choice="blue" aria-pressed="true"><i style="background:#285fe9"></i>冰川藍</button><button data-accent-choice="violet" aria-pressed="false"><i style="background:#7044ce"></i>霧紫色</button><button data-accent-choice="mono" aria-pressed="false"><i style="background:#29394f"></i>銀灰色</button></div></fieldset><label class="setting-check"><input type="checkbox" id="snapToggle"><span>章節吸附<small>開啟後，捲動會輕輕對齊章節；預設自由捲動。</small></span></label><p class="dialog-note">動畫會依照裝置的「減少動態效果」設定自動調整。你的選擇只保留在這個瀏覽器。</p></dialog>
+
+  <!-- 製作筆記供課堂學習使用，正式人物內容不混入技術實作細節。 -->
+  <dialog class="notes-dialog" id="notesDialog" aria-labelledby="notesTitle"><div class="dialog-heading"><div><p class="eyebrow">BEHIND THE PAGE</p><h2 id="notesTitle">這個網站，如何被做出來？</h2></div><button class="icon-button close-dialog" aria-label="關閉製作筆記">✕</button></div><p>以石墨黑首屏、冰藍強調色與冷白內容區，結合俐落矩形照片、全版面節奏與研究捲動敘事。使用原生 HTML、CSS、JavaScript；單檔版已內嵌本人照片、文件預覽與 PDF。</p><h3>你可以動手改的地方</h3><ol><li><strong>改顏色：</strong>從右上角切換三種強調色；也可修改 CSS 的 <code>--accent</code>。</li><li><strong>比較捲動：</strong>在外觀設定開關「章節吸附」，觀察與自由捲動的差異。</li><li><strong>增加敘事：</strong>仿照研究章節的 <code>.research-step</code> 新增步驟；完整程式包附新增方法。</li><li><strong>深色模式：</strong>支援跟隨系統與手動切換；閱讀 CSS 中 <code>prefers-color-scheme</code> 的註解。</li><li><strong>部署練習：</strong>完整程式包附靜態網站部署步驟。公開前先檢查嵌入文件中希望分享的個人資訊。</li></ol><h3>資料與閱讀方式</h3><p>內容依「大一」、「學習歷程檔案」與研究海報整理。特質的敘述為上述經歷的摘要；未以虛構數值評分。海報預覽來自原始 PDF，科學圖形為概念示意。</p><p>原始 HTML 也是程式碼，可直接以文字編輯器開啟。每個主要區塊、重要 CSS 與互動 JavaScript 都附中文註解。</p></dialog>
+  <div id="liveNotice" class="sr-only" aria-live="polite"></div>
+  <noscript><p class="noscript-note">目前已停用 JavaScript，互動分頁與文件閱讀器需要啟用 JavaScript。其餘文字與原生成長軌跡可正常閱讀。</p></noscript>
+  <!-- 資料區：單檔版將素材以 Base64 放在這裡，通常不需要手動修改。 -->
+  <script type="application/json" id="assetData">{}</script>
+  <script src="script.js"></script>
+</body>
+</html>
